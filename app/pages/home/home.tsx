@@ -1,6 +1,7 @@
 import About from "~/components/home/about";
 import Contact from "~/components/home/contact";
 import Hero from "~/components/home/hero";
+import ProfessionalWork from "~/components/home/ProfessionalWork";
 import Projects from "~/components/home/projects";
 import Skills from "~/components/home/skills";
 import Footer from "~/components/shared/footer";
@@ -13,6 +14,7 @@ export function Home() {
       <Hero />
       <About />
       <Skills />
+      <ProfessionalWork />
       <Projects />
       <Contact />
       <Footer />

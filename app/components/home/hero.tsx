@@ -30,9 +30,9 @@ const Hero: React.FC = () => {
                 </h1>
 
                 <p className="mt-6 text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto text-center leading-relaxed">
-                    I build web and mobile applications using React, React Native, Node.js,
-                    and Python. I enjoy working across the full stack and I’m currently
-                    focusing on AI-powered features that solve real problems.
+                    Full-Stack Developer with <b>7+ years</b> of experience building scalable web and mobile applications.
+                    Over the last <b>4 years</b>, I’ve focused on designing intelligent,
+                    data-driven platforms powered by modern system architecture and AI-enabled workflows.
                 </p>
 
                 <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">

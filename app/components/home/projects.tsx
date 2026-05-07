@@ -24,14 +24,13 @@ const projects: Project[] = [
 function Projects(): JSX.Element {
     return (
         <section id="projects" className="relative py-24 px-6 bg-gradient-to-b from-gray-950 via-indigo-900 to-gray-950">
-            {/* Elegant abstract circles/background */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute -top-32 -left-32 w-96 h-96 bg-indigo-600 rounded-full opacity-20 blur-3xl"></div>
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-500 rounded-full opacity-20 blur-3xl"></div>
             </div>
 
             <div className="relative max-w-6xl mx-auto">
-                <h2 className="text-4xl font-bold text-gray-100 mb-12 text-center">Projects</h2>
+                <h2 className="text-4xl font-bold text-gray-100 mb-12 text-center">Personal Projects</h2>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (

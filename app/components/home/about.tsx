@@ -12,12 +12,16 @@ function About(): JSX.Element {
                     </h2>
 
                     <p className="text-lg text-gray-400 leading-relaxed">
-                        I’m a full-stack developer who has worked on web and mobile applications
-                        using React, React Native, Angular, Node.js, and Python. I focus on
-                        building complete, real-world solutions—from clean user interfaces to
-                        reliable backend logic—and I’m currently exploring AI-powered features
-                        as technology continues to evolve.
-                    </p>
+                        I’m a full-stack engineer passionate about building digital experiences that solve real problems. My work sits at the intersection of product thinking, clean architecture, and user-centered design.                    </p>
+                    <br />
+
+                    <p className="text-lg text-gray-400 leading-relaxed">
+
+                        Over the years, I’ve built everything from interactive frontends and mobile applications to backend systems, analytics dashboards, and workflow automation tools. I’m passionate about building products that solve real business challenges and create meaningful experiences for users.                    </p>
+                    <br />
+
+                    <p className="text-lg text-gray-400 leading-relaxed">
+                        Beyond writing code, I enjoy simplifying complexity, improving developer workflows, and helping teams build with clarity and purpose.                    </p>
                 </div>
 
                 {/* Right: Image */}

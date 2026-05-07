@@ -17,7 +17,7 @@ function Contact(): JSX.Element {
                 <div className="flex flex-col sm:flex-row justify-center gap-6">
                     {/* Email */}
                     <a
-                        href="mailto:penninahmuchokimike@gmail.com"
+                        href="mailto:anitah.kimanthi@gmail.com"
                         className="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition font-medium"
                     >
                         Email Me
@@ -32,14 +32,14 @@ function Contact(): JSX.Element {
                     </a>
 
                     {/* Optional: LinkedIn */}
-                    {/* <a
+                    <a
                         href="https://www.linkedin.com/in/anitakimanzi/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-6 py-3 rounded-xl border border-gray-700 hover:border-gray-500 transition font-medium"
                     >
                         LinkedIn
-                    </a> */}
+                    </a>
 
                     {/* Optional: GitHub */}
                     {/* <a
@@ -54,7 +54,7 @@ function Contact(): JSX.Element {
 
                 {/* Optional: Text with contact info */}
                 <p className="mt-10 text-gray-500 text-sm">
-                    Email: <a href="mailto:penninahmuchokimike@gmail.com" className="underline">penninahmuchokimike@gmail.com</a> | Phone: <a href="tel:+254759559415" className="underline">+254759559415</a>
+                    Email: <a href="mailto:anitah.kimanthi@gmail.com" className="underline">anitah.kimanthi@gmail.com</a> | Phone: <a href="tel:+254792508844" className="underline">+254792508844</a>
                 </p>
             </div>
         </section>
