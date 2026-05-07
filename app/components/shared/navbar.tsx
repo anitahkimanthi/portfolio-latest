@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
                     className="text-indigo-400 font-bold text-xl cursor-pointer"
                     onClick={() => handleClick("hero")}
                 >
-                    Peninnah Wangari
+                    Anitah Kimanthi
                 </div>
 
                 {/* Desktop Menu */}

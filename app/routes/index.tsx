@@ -3,7 +3,7 @@ import type { Route } from "./+types/index";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "Peninnah Wangari" },
+    { title: "Anitah Kimanthi" },
     { name: "description", content: "Thank you for reviewing my portfolio!" },
   ];
 }
