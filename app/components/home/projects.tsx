@@ -14,7 +14,7 @@ type Project = {
 
 const projects: Project[] = [
     { name: "E-Commerce Store", image: wine, link: "https://shopwine.netlify.app/" },
-    { name: "Cake house", image: cake, link: "https://anitahkimanthi.github.io/houseofcakes/" },
+    { name: "Cake House", image: cake, link: "https://anitahkimanthi.github.io/houseofcakes/" },
     { name: "Club Website", image: club, link: "https://openinstitute-university-club.netlify.app/home" },
     { name: "Real Estate Website", image: realestate, link: "" },
     { name: "Music Search", image: music, link: "https://search-music.netlify.app/" },
