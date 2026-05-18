@@ -22,14 +22,8 @@ const projects: Project[] = [
     {
         name: "NexusFlow",
         image: nexus1,
-        link: "https://nexus-flow-app.netlify.app/",
+        link: "https://nexus-flow-app.netlify.app/register",
         category: "AI Workflow Platform",
-    },
-    {
-        name: "Portfolio",
-        image: portfolio,
-        link: "https://anitahportfolio.netlify.app/",
-        category: "Personal Brand",
     },
     {
         name: "Real Estate Platform",
@@ -37,8 +31,6 @@ const projects: Project[] = [
         link: "",
         category: "Property Discovery Platform",
     },
-
-
 
 ];
 
