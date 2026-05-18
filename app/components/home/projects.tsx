@@ -1,10 +1,7 @@
 import React, { type JSX } from "react";
-import wine from "../../assets/wine.jpg";
-import cake from "../../assets/cake.png";
-import club from "../../assets/club.jpg";
 import realestate from "../../assets/realestate.jpg";
-import music from "../../assets/music.jpg";
 import portfolio from "../../assets/portfolio.png";
+import nexus from "../../assets/nexus.png";
 import { ArrowUpRight } from "lucide-react";
 
 type Project = {
@@ -22,10 +19,10 @@ const projects: Project[] = [
         category: "Property Discovery Platform",
     },
     {
-        name: "E-Commerce Store",
-        image: wine,
-        link: "https://shopwine.netlify.app/",
-        category: "Web Commerce",
+        name: "NexusFlow",
+        image: nexus,
+        link: "https://nexus-flow-app.netlify.app/",
+        category: "AI Workflow Platform",
     },
 
     {
