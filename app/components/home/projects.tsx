@@ -57,12 +57,14 @@ function Projects(): JSX.Element {
                             className={`group overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-3 transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.05] ${!project.link ? "pointer-events-none opacity-70" : ""
                                 }`}
                         >
-                            <div className="overflow-hidden rounded-[1.25rem] bg-slate-900">
-                                <img
-                                    src={project.image}
-                                    alt={project.name}
-                                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
-                                />
+                            <div className="overflow-hidden rounded-[1.25rem] border  p-3">
+                                <div className="flex h-[200px] items-center justify-center overflow-hidden rounded-xl bg-slate-950">
+                                    <img
+                                        src={project.image}
+                                        alt={project.name}
+                                        className="h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.03]"
+                                    />
+                                </div>
                             </div>
 
                             <div className="flex items-center justify-between gap-4 px-2 pb-2 pt-5">
