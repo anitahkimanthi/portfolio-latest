@@ -13,24 +13,26 @@ type Project = {
 
 const projects: Project[] = [
     {
-        name: "Real Estate Platform",
-        image: realestate,
-        link: "",
-        category: "Property Discovery Platform",
-    },
-    {
         name: "NexusFlow",
         image: nexus,
         link: "https://nexus-flow-app.netlify.app/",
         category: "AI Workflow Platform",
     },
-
     {
         name: "Portfolio",
         image: portfolio,
         link: "https://anitahportfolio.netlify.app/",
         category: "Personal Brand",
     },
+    {
+        name: "Real Estate Platform",
+        image: realestate,
+        link: "",
+        category: "Property Discovery Platform",
+    },
+
+
+
 ];
 
 function Projects(): JSX.Element {
