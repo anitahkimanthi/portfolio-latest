@@ -8,58 +8,62 @@ const Navbar: React.FC = () => {
 
     const handleClick = (id: string) => {
         const element = document.getElementById(id);
+
         if (element) {
             element.scrollIntoView({ behavior: "smooth" });
         }
+
         setOpen(false);
     };
 
     return (
-        <nav className="fixed top-0 w-full bg-gray-950/90 backdrop-blur-md z-50 shadow-md">
-            <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4 m-5">
+        <nav className="fixed top-0 z-50 w-full border-b border-white/5 bg-slate-950/60 backdrop-blur-xl">
+            <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
                 {/* Logo */}
-                <div
-                    className="text-indigo-400 font-bold text-xl cursor-pointer"
+                <button
                     onClick={() => handleClick("hero")}
+                    className="text-sm font-medium tracking-wide text-white transition-opacity hover:opacity-80"
                 >
                     Anitah Kimanthi
-                </div>
+                </button>
 
                 {/* Desktop Menu */}
-                <ul className="hidden md:flex gap-6 text-gray-100">
+                <ul className="hidden items-center gap-8 text-sm text-slate-400 md:flex">
                     {sections.map((sec) => (
                         <li
                             key={sec}
-                            className="cursor-pointer hover:text-indigo-400 transition"
                             onClick={() => handleClick(sec)}
+                            className="cursor-pointer capitalize transition-colors duration-300 hover:text-white"
                         >
-                            {sec.charAt(0).toUpperCase() + sec.slice(1)}
+                            {sec}
                         </li>
                     ))}
                 </ul>
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden text-gray-100"
+                    className="text-slate-300 transition hover:text-white md:hidden"
                     onClick={() => setOpen(!open)}
                 >
-                    {open ? <X size={28} /> : <Menu size={28} />}
+                    {open ? <X size={24} /> : <Menu size={24} />}
                 </button>
             </div>
 
             {/* Mobile Menu */}
             {open && (
-                <ul className="md:hidden bg-gray-950 border-t border-gray-800 px-6 py-4 space-y-4 text-gray-100">
-                    {sections.map((sec) => (
-                        <li
-                            key={sec}
-                            className="cursor-pointer hover:text-indigo-400 transition"
-                            onClick={() => handleClick(sec)}
-                        >
-                            {sec.charAt(0).toUpperCase() + sec.slice(1)}
-                        </li>
-                    ))}
-                </ul>
+                <div className="border-t border-white/5 bg-slate-950/95 backdrop-blur-xl md:hidden">
+                    <ul className="space-y-6 px-6 py-6 text-sm text-slate-400">
+                        {sections.map((sec) => (
+                            <li
+                                key={sec}
+                                onClick={() => handleClick(sec)}
+                                className="cursor-pointer capitalize transition-colors duration-300 hover:text-white"
+                            >
+                                {sec}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             )}
         </nav>
     );

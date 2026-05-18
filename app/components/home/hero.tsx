@@ -1,55 +1,82 @@
 import React from "react";
 import bg from "../../assets/bg.jpg";
+import { ArrowRight } from "lucide-react";
 
 const Hero: React.FC = () => {
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
+
         if (element) {
             element.scrollIntoView({ behavior: "smooth" });
         }
     };
 
     return (
-        <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gray-950 pt-24 md:pt-0">
-            {/* Background Image */}
+        <section
+            id="hero"
+            className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#050816] px-6 text-white"
+        >
+            {/* Background */}
             <div
-                className="absolute inset-0 bg-cover bg-center opacity-40"
+                className="absolute inset-0 bg-cover bg-center opacity-[0.7]"
                 style={{ backgroundImage: `url(${bg})` }}
-            ></div>
+            />
 
-            {/* Overlay to darken image */}
-            <div className="absolute inset-0 bg-gray-950 opacity-70"></div>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-950/75 to-slate-950/85" />
+
+            {/* Soft glow */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.14),transparent_45%)]" />
 
             {/* Content */}
-            <div className="relative z-10">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-100">
-                    Full-Stack Developer
-                    <span className="block text-indigo-400 mt-2 text-base sm:text-lg md:text-xl lg:text-2xl">
-                        Building End-to-End Applications
-                    </span>
-                </h1>
+            <div className="relative z-10 mx-auto max-w-4xl text-center">
+                {/* Top tag */}
+                <div className="mb-8 inline-flex items-center rounded-full border border-white/10 bg-white/[0.03] px-5 py-2 text-sm font-medium tracking-wide backdrop-blur-md">
+                    <span className="text-cyan-300">Engineering</span>
 
-                <p className="mt-6 text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto text-center leading-relaxed">
-                    Full-Stack Developer with <b>7+ years</b> of experience building scalable web and mobile applications.
-                    Over the last <b>4 years</b>, I’ve focused on designing intelligent,
-                    data-driven platforms powered by modern system architecture and AI-enabled workflows.
+                    <span className="mx-3 text-slate-600">•</span>
+
+                    <span className="text-violet-300">Product Design</span>
+
+                    <span className="mx-3 text-slate-600">•</span>
+
+                    <span className="text-pink-300">AI Systems</span>
+                </div>
+
+                {/* Heading */}
+                <h1 className="text-4xl font-semibold leading-[1.15] tracking-tight text-white md:text-6xl">
+                    Engineering modern digital experiences                </h1>
+
+                {/* Supporting text */}
+                <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-slate-400">
+                    Full-stack developer combining engineering, product design,
+                    and AI systems to build scalable, human-centered applications.
                 </p>
 
-                <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                    {/* Scroll to Projects */}
+                {/* Philosophy */}
+                <p className="mx-auto mt-10 max-w-3xl text-base leading-8 text-slate-500 italic">
+                    “The definition of good engineering is changing.
+                    AI can generate code — judgment is now the differentiator”
+                </p>
+
+                {/* CTA */}
+                <div className="mt-12 flex flex-col justify-center gap-4 sm:flex-row">
                     <button
                         onClick={() => scrollToSection("projects")}
-                        className="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition"
+                        className="group flex items-center justify-center gap-2 rounded-2xl bg-white px-7 py-4 font-medium text-slate-950 transition hover:scale-[1.01]"
                     >
-                        View Projects
+                        View Work
+                        <ArrowRight
+                            size={18}
+                            className="transition group-hover:translate-x-1"
+                        />
                     </button>
 
-                    {/* Scroll to Contact */}
                     <button
                         onClick={() => scrollToSection("contact")}
-                        className="px-6 py-3 rounded-xl border border-gray-700 hover:border-gray-500 transition"
+                        className="rounded-2xl border border-white/10 bg-white/[0.02] px-7 py-4 font-medium text-slate-300 transition hover:bg-white/[0.04]"
                     >
-                        Contact Me
+                        Contact
                     </button>
                 </div>
             </div>
