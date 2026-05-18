@@ -20,7 +20,7 @@ const projects: Project[] = [
         category: "AI Workflow Platform",
     },
     {
-        name: "NexusFlow",
+        name: "Nexus Operational Dashbaord",
         image: nexus1,
         link: "https://nexus-flow-app.netlify.app/register",
         category: "AI Workflow Platform",
