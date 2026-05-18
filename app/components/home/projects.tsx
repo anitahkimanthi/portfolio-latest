@@ -2,6 +2,7 @@ import React, { type JSX } from "react";
 import realestate from "../../assets/realestate.jpg";
 import portfolio from "../../assets/portfolio.png";
 import nexus from "../../assets/nexus.png";
+import nexus1 from "../../assets/nexus1.png";
 import { ArrowUpRight } from "lucide-react";
 
 type Project = {
@@ -15,6 +16,12 @@ const projects: Project[] = [
     {
         name: "NexusFlow",
         image: nexus,
+        link: "https://nexus-flow-app.netlify.app/",
+        category: "AI Workflow Platform",
+    },
+    {
+        name: "NexusFlow",
+        image: nexus1,
         link: "https://nexus-flow-app.netlify.app/",
         category: "AI Workflow Platform",
     },
