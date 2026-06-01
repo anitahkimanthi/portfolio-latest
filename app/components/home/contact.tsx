@@ -84,7 +84,7 @@ function Contact(): JSX.Element {
                         <motion.a
                             variants={fadeUp}
                             whileHover={{ y: -3 }}
-                            href="https://www.linkedin.com/in/anitakimanzi/"
+                            href="https://www.linkedin.com/in/anitakimanthi/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:border-white/20 hover:bg-white/[0.05]"
